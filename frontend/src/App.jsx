@@ -9,7 +9,7 @@ function App() {
   const [editMode, setEditMode] = useState(false);
 
   useEffect(() => {
-    // Get the current date in YYYY-MM-DD format
+    // Get the current date in YYYY-MM-DD formatdf
     const today = new Date();
     const year = today.getFullYear();
     const month = String(today.getMonth() + 1).padStart(2, '0');

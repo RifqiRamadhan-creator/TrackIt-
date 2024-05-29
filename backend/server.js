@@ -5,9 +5,10 @@ const todoRoutes = require('./routes/todoRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+app.use(cors());
 
 
-mongoose.connect('mongodb+srv://rifqirival444:5MRauosXHFyc7H62@sbd7.hzjutlg.mongodb.net/Modul7SBD', {
+mongoose.connect('mongodb+srv://rifqirival444:5MRauosXHFyc7H62@sbd7.hzjutlg.mongodb.net/?retryWrites=true&w=majority&appName=SBD7', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
